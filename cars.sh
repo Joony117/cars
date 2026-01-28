@@ -5,9 +5,9 @@
 
 
 while true; do
-    read -rp "Type "1" to Add a car
-Type "2" to List the cars in the inventory file
-Type "3" to Quit the program: " CHOICE
+    read -rp "Type 1 to Add a car
+Type 2 to List the cars in the inventory file
+Type 3 to Quit the program: " CHOICE
 
     case "$CHOICE" in
         "1") 
@@ -20,7 +20,7 @@ Type "3" to Quit the program: " CHOICE
             echo "$CAR" >> my_old_cars
             ;;
 
-        "2") cat my_old_cars | sort -t: -k1,1n
+        "2") sort -t: -k1,1n my_old_cars
 ;;
         "3") echo "Goodbye"
         break;;
