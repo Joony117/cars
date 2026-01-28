@@ -63,7 +63,15 @@ When tested with the input file `cars-input` , it appends 1984:Toyota:Supra into
 [Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding regular expressions, or Git workflow problems.]
 
 ## Resources
-[Chatgpt for syntax and the line "sort -t: -k1,1n my_old_cars"]
+Chatgpt, prompts used:
+
+how come some ifs use [[]] and some (())
+
+read -rp "Enter the year of the car: " YEAR read -rp "Enter the Make of the car: " MAKE read -rp "Enter the Model of the car: " MODEL CAR="$YEAR:$MAKE:$MODEL" will this work as expected with the ':' character ?
+
+lets say we want to append the string car to another file named my_old_cars, do i just do $CAR >> my_old_cars ?
+
+can we use cat to print out a sorted output?
 
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.
